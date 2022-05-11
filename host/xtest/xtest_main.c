@@ -157,8 +157,6 @@ int main(int argc, char *argv[])
 		return sha_perf_runner_cmd_parser(argc-1, &argv[1]);
 	else if (argc > 1 && !strcmp(argv[1], "--aes-perf"))
 		return aes_perf_runner_cmd_parser(argc-1, &argv[1]);
-	else if (argc > 1 && !strcmp(argv[1], "--crypto-perf"))
-		return crypto_perf_runner_cmd_parser(argc-1, &argv[1]);
 #ifdef CFG_SECSTOR_TA_MGMT_PTA
 	else if (argc > 1 && !strcmp(argv[1], "--install-ta"))
 		return install_ta_runner_cmd_parser(argc - 1, argv + 1);
